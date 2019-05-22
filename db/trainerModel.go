@@ -1,5 +1,4 @@
-package main
-
+package db
 
 
 type Trainer struct {
