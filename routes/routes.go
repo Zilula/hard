@@ -17,6 +17,7 @@ func CreateRouter(db *mongo.Database) (*mux.Router) {
 
 	// Route handlers // endpoints
 	router.HandleFunc("/api/trainers", api.CreateTrainer()).Methods("POST")
+	router.HandleFunc("/api/trainers", api.GetAllTrainers()).Methods("GET")
 
 	//run server
 
